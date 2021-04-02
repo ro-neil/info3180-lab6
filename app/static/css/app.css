@@ -1,7 +1,141 @@
 body {
     padding-top: 5rem;
+    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
 }
-
+nav{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#04724d;
+    color: #F4F4F9;
+}
+.navbar-brand{
+    padding-top: 0;
+    padding-bottom: .18rem;
+    border-bottom: 2px solid #fff;
+}
 footer  {
     padding-top: 20px;
+}
+
+#user-img{
+    width: 1.5rem;
+    height:1.5rem;
+    margin-right:2rem;
+}
+
+.news{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 1rem;
+}
+.news img{
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.15rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 0.8rem 0 1rem 0;
+}
+
+h5{
+    font-weight: 500;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+.news__list{
+    padding-inline-start: 0;
+}
+
+.card-header{
+    color: #212227;
+    padding: .75rem 0.5rem;
+    background-color:#fff;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+
+.news__item{
+    list-style: none;
+    min-height: 20rem;
+    border-radius: 0.35rem;
+    border-top: 6px solid #FF5964;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: left;
+    margin-bottom: 1.5rem !important;
+}
+
+.news__list .card-body{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.article-desc{
+    font-size: medium;
+    margin-bottom: 0 !important;
+    padding-bottom: 0.75rem;
+}
+
+.form-inline{
+    align-self: flex-start;
+}
+
+.search-btn{
+    background-color: #FF5964;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.search-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.search-btn:focus{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+@media (min-width: 415px) and (max-width: 575.98px){ 
+    .news img{
+        height: 19rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){ 
+    .news__list{
+        column-count: 2;
+    }
+    .news img{
+        height: 10rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){ 
+    .news__list{
+        column-count: 2;
+    }
+    .news img{
+        height: 13rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){ 
+    .news__list{
+        column-count: 3;
+    }
+    .news img{
+        height: 10rem;
+    }
+}
+
+@media (min-width: 1200px){ 
+    .news__list{
+        column-count: 3;
+    }
 }
